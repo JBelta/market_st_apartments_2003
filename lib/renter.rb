@@ -5,4 +5,4 @@ class Renter
     @name = name
   end
 
-  
+end

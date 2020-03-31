@@ -10,3 +10,4 @@ class RenterTest < Minitest::Test
   assert_instance_of Renter, renter1
 
 end
+end
