@@ -15,14 +15,15 @@ class ApartmentTest < Minitest::Test
   end
 
   def test_at_add_renter
+
     renter1 = Renter.new("Jessie")
     unit1 = Apartment.new({number: "A1", monthly_rent: 1200, bathrooms: 1, bedrooms: 1})
 
-    require 'pry'; binding.pry
-    assert_equal [], @renter
-    require 'pry'; binding.pry
+
+    assert_equal nil, unit1.renter
+    
     unit1.add_renter(renter1)
-    assert_equal renter1, @renter
+    assert_equal renter1, unit1.renter
   end
 
 end
